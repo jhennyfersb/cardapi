@@ -7,7 +7,9 @@ public class Card {
 
     private String name;
 
-    private String imageRrl;
+    private String imageUrl;
+
+    private String description;
 
     private int strength;
 
@@ -18,6 +20,8 @@ public class Card {
     private int gear;
 
     private int intellect;
+
+    private CardOrigin cardOrigin;
 
     private LocalDateTime createdAt;
 
@@ -39,12 +43,12 @@ public class Card {
         this.name = name;
     }
 
-    public String getImageRrl() {
-        return imageRrl;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImageUrl(String imageRrl) {
-        this.imageRrl = imageRrl;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public int getStrength() {
@@ -103,12 +107,28 @@ public class Card {
         this.updateAt = updateAt;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public CardOrigin getCardOrigin() {
+        return cardOrigin;
+    }
+
+    public void setCardOrigin(CardOrigin cardOrigin) {
+        this.cardOrigin = cardOrigin;
+    }
+
     @Override
     public String toString() {
         return "Card{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", imageRrl='" + imageRrl + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
                 ", strength=" + strength +
                 ", speed=" + speed +
                 ", skill=" + skill +
@@ -118,4 +138,6 @@ public class Card {
                 ", updateAt=" + updateAt +
                 '}';
     }
+
+
 }
