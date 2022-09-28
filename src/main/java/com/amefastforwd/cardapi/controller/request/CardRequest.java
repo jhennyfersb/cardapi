@@ -1,24 +1,18 @@
 package com.amefastforwd.cardapi.controller.request;
 
-public class CreateCardRequest {
+public class CardRequest {
     private String name;
-
     private String description;
-
     private String imageUrl;
     private int strenght;
     private int speed;
-
     private int skill;
     private int gear;
-
     private int intellect;
     private int originId;
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -89,7 +83,7 @@ public class CreateCardRequest {
 
     @Override
     public String toString() {
-        return "CreateCardRequest{" +
+        return "CardRequest{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +

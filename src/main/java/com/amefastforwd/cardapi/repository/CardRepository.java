@@ -1,13 +1,9 @@
 package com.amefastforwd.cardapi.repository;
 
 import com.amefastforwd.cardapi.model.Card;
-import org.springframework.stereotype.Repository;
-import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public interface CardRepository {
-    Optional<Card> findById(int id);
-    Card save(Card card);
 
-    void deleteById(int id);
+public interface CardRepository extends JpaRepository<Card, Long> {
+
 }

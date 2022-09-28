@@ -1,6 +1,6 @@
 package com.amefastforwd.cardapi.controller.request;
 
-public class CreateCardOriginRequest {
+public class CardOriginRequest {
     private String name;
 
     private String description;

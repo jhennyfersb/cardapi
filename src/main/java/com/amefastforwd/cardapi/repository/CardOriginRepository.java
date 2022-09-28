@@ -1,10 +1,9 @@
 package com.amefastforwd.cardapi.repository;
 
 import com.amefastforwd.cardapi.model.CardOrigin;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
 
-public interface CardOriginRepository {
-    CardOrigin save(CardOrigin cardOrigin);
-    Optional<CardOrigin> findById(int id);
+public interface CardOriginRepository extends JpaRepository<CardOrigin, Long> {
+
 }

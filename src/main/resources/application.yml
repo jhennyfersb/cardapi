@@ -1,4 +1,20 @@
 server:
   port: 8080
   error:
-    include_message : always
+    include_message: always
+    include_exception: false
+
+spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-admin-password: example
+        web-allow-others: true
+
+
+database:
+  url: jdbc:h2:file:./database/db_cards
+  username: root
+  password: root
+
